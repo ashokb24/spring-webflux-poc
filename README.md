@@ -1,5 +1,72 @@
-# spring-webflux-poc
-This repo demonstrates CRUD APIs using Spring Web Flux ( Spring Reactive Web )
 
-# Technology Used
-SpringBoot, Spring Reactive , Spring WebFlux, Cassandra, Spring JPA
+
+
+> Written with [StackEdit](https://stackedit.io/).
+# spring-webflux-poc
+
+This repo contains a SpringBoot Microservice which flavoured with spring reactive based CRUD APIs
+
+# Need of PoC
+Spring reactive is a new paradigm being used to developed REST Apis to address Non-Blocking concern to the applications. Spring has released the component **spring-boot-starter-webflux**. I took good amount of time to explore the webflux while I was working for a customer and found web-flux is a very component to build non-blocking rest APIs. Since webflux based REST apis development is new in market and we have got a very few documentation in the internet. This PoC is a kind of learning for me which I want to showcase to the developers who are in need of. 
+
+# Technologies Used
+
+ - Java
+ - SpringBoot
+	 - Spring Web Flux
+ - Apache Cassandra
+
+# Diagram
+
+
+# Pre-Requisite
+To be able to explore and run this service, you should have the below
+
+ - java
+ - Apache Cassandra
+ 
+	 **Cassandra Installation Steps**
+ Well, I've used MAC to develop this PoC. Installation of Cassandra is fairly simple. Its just a single line command to install the cassandra. I dont want to get into more on the installation of Cassandra as we get enough documentation on it. 
+
+    brew install cassandra
+
+Some commands that helps you related to cassandra are below. I've set the below comma
+
+ - List item
+
+nds as alias on my bashprofile. 
+
+ - To start the cassandra instance post installation.
+
+    cassandra -f
+    
+
+ - Type **cqlsh** to enter cqlsh shell. 
+ - On cqlsh shell
+	 - Create Keyspace Command
+		 - create keyspace <keyspace_name> WITH replication = {'class': 'SimpleStrategy', 'replication_factor':1};
+	 - List Keyspace command
+		 - desc keyspaces;
+	 - Use a specific keyspace
+		 - use <keyspace_name> ;
+		 
+
+	 - Create table command
+		 - create table **employee** (EmployeeId int primary key, first_name varchar, last_name varchar, department_name varchar);
+	
+	 - Help command
+		 - Type **HELP** on cqlsh shell for any help with the commands available.
+
+# Employee MicroService
+
+Sorry!! As always, I've chosen Employee as a Business Entity to develop the Microservice as it is a very easy use-case to showcase the CRUD capabilities of a service using **Employee** Business Entity. 
+
+This Service exposes the below endpoints and they are very much self explanatory.
+
+| API|  Method| URI | HttpStatus Code|
+|--|--|--|--|
+| getAllEmployees| GET  |/api/v1/webfluxservice/{employeeId}/employeeId/employees |200|
+|getEmployee|GET|/api/v1/webfluxservice/{employeeId}/employeeId/employee|200|
+|deleteEmployee|DELETE|/api/v1/webfluxservice/{employeeId}/employeeId|200|
+|createEmployee|POST|/api/v1/webfluxservice/employee|201|
+|updateEmployee|PUT|/api/v1/webfluxservice/employee|200|
