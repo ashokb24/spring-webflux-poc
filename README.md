@@ -51,11 +51,11 @@ Some commands that helps you related to cassandra are below. I've set the below 
 	     `use <keyspace_name>` ;
 	 - Create table command
 	 
-		 `create table **employee** (EmployeeId int primary key, first_name varchar, last_name varchar, department_name varchar);`
+		 `create table employee (EmployeeId int primary key, first_name varchar, last_name varchar, department_name varchar);`
     	
 	 - Help command
 	 
-		 `Type **HELP** on cqlsh shell for any help with the commands available.`
+		 `Type HELP on cqlsh shell for any help with the commands available.`
 
 # Employee MicroService
 
