@@ -54,6 +54,12 @@ Some commands that helps you related to cassandra are below. I've set the below 
 
 Sorry!! As always, I've chosen Employee as a Business Entity to develop the Microservice as it is a very easy use-case to showcase the CRUD capabilities of a service using **Employee** Business Entity. 
 
+Microservice interacts with Cassandra database which acts a datastore for Employee Microservice. Below are the configurable parameters to be mentioned in **application.properties.** 
+
+    spring.data.cassandra.keyspace-name=<keyspace_name>
+    spring.data.cassandra.port=9042
+    spring.data.cassandra.local-datacenter=datacenter1
+
 This Service exposes the below endpoints and they are very much self explanatory.
 
 | API|  Method| URI | HttpStatus Code|
