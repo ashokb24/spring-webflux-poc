@@ -17,7 +17,7 @@ Spring reactive is a new paradigm being used to developed REST Apis to address N
  - Apache Cassandra
 
 # Diagram
-![Image description](Arch.PNG)
+![Image description](Arch.png)
 
 # Pre-Requisite
 To be able to explore and run this service, you should have the below
