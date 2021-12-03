@@ -69,10 +69,10 @@ Microservice interacts with Cassandra database which acts a datastore for Employ
 
 This Service exposes the below endpoints and they are very much self explanatory.
 
-| API|  Method| URI | HttpStatus Code|
-|--|--|--|--|
-| getAllEmployees| GET  |/api/v1/webfluxservice/{employeeId}/employeeId/employees |200|
-|getEmployee|GET|/api/v1/webfluxservice/{employeeId}/employeeId/employee|200|
-|deleteEmployee|DELETE|/api/v1/webfluxservice/{employeeId}/employeeId|200|
-|createEmployee|POST|/api/v1/webfluxservice/employee|201|
-|updateEmployee|PUT|/api/v1/webfluxservice/employee|200|
+| API|Description |  Method| URI | HttpStatus Code|
+|--|--|--|--|--|
+| getAllEmployees|Endpoint to fetch all the employee details| GET  |/api/v1/webfluxservice/{employeeId}/employeeId/employees |200|
+|getEmployee|Endpoint to fetch a specific employee detail |GET|/api/v1/webfluxservice/{employeeId}/employeeId/employee|200|
+|deleteEmployee|Endpoint to delete a specific employee detail|DELETE|/api/v1/webfluxservice/{employeeId}/employeeId|200|
+|createEmployee|Endpoint to create a new Employee Resource|POST|/api/v1/webfluxservice/employee|201|
+|updateEmployee|Endpoint to update existing employee detail|PUT|/api/v1/webfluxservice/employee|200|
