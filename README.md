@@ -7,7 +7,7 @@
 This repo contains a SpringBoot Microservice which is flavoured with spring reactive based CRUD APIs
 
 # Need of PoC
-Spring reactive is a new paradigm being used to develop REST Apis to address Non-Blocking concern to the applications. Spring has released the component **spring-boot-starter-webflux**. I took good amount of time to explore the webflux while I was working for a customer and found web-flux is a very component to build non-blocking rest APIs. Since webflux based REST apis development is new in market and we have got a very few documentation in the internet. This PoC is a kind of learning for me which I want to showcase to the developers who are in need of. 
+Spring reactive is a new paradigm being used to develop REST Apis to address Non-Blocking concern of the Workload. Spring has released the component **spring-boot-starter-webflux**. I took good amount of time to explore the webflux while I was working for a customer and found web-flux is a very component to build non-blocking rest APIs. Since webflux based REST apis development is new in market and we have got a very few documentation in the internet. This PoC is a kind of learning for me which I want to showcase to the developers who are in need of. 
 
 # Technologies Used
 
