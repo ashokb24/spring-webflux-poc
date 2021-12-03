@@ -69,7 +69,7 @@ Microservice interacts with Cassandra database which acts a datastore for Employ
 
 This Service exposes the below endpoints and they are very much self explanatory.
 
-| API|Description |  Method| URI | HttpStatus Code|
+|<span style="color:blue">API</span>|Description |  Method| URI | HttpStatus Code|
 |--|--|--|--|--|
 | getAllEmployees|Endpoint to fetch all the employee details| GET  |/api/v1/webfluxservice/{employeeId}/employeeId/employees |200|
 |getEmployee|Endpoint to fetch a specific employee detail |GET|/api/v1/webfluxservice/{employeeId}/employeeId/employee|200|
