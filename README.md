@@ -40,16 +40,21 @@ Some commands that helps you related to cassandra are below. I've set the below 
  - Type **cqlsh** to enter cqlsh shell. 
  
  - On cqlsh shell
-	 - Create Keyspace Command
+	 - Create Keyspace Command:
+	 
 		 `create keyspace <keyspace_name> WITH replication = {'class': 'SimpleStrategy', 'replication_factor':1};`
 	 - List Keyspace command
+	 
 		 `desc keyspaces;`
 	 - Use a specific keyspace
+	 
      `use <keyspace_name>` ;
 	 - Create table command
+	 
 	 `create table **employee** (EmployeeId int primary key, first_name varchar, last_name varchar, department_name varchar);`
     	
 	 - Help command
+	 
 	 `Type **HELP** on cqlsh shell for any help with the commands available.`
 
 # Employee MicroService
