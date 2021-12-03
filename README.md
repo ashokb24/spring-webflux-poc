@@ -20,12 +20,13 @@ Spring reactive is a new paradigm being used to developed REST Apis to address N
 ![Image description](Arch.png)
 
 # Pre-Requisite
-To be able to explore and run this service, you should have the below
+To be able to explore and run this service, you should have the below as a pre-requisites.
 
  - java
  - Apache Cassandra
  
 	 **Cassandra Installation Steps**
+ 
  Well, I've used MAC to develop this PoC. Installation of Cassandra is fairly simple. Its just a single line command to install the cassandra. I dont want to get into more on the installation of Cassandra as we get enough documentation on it. 
 
     brew install cassandra
